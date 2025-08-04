@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, #fcf8e8, #d4e2d4, #ecb390, #df7861);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.compact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.compact-container img {
+  width: 450px;
+  height: auto;
+}
+.compact-container p.lead {
+  color: #a0313c;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+form input[type="text"] {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+}
+form input[type="submit"] {
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+}
+
+.register {
+  min-width: 400px;
+  max-height: 300px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.animated-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #fcf8e8, #d4e2d4, #ecb390, #df7861);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,15 @@
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+#fileList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#content {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
